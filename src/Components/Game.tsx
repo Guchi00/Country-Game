@@ -1,4 +1,4 @@
-import React, { useEffect, useState, ChangeEvent } from "react";
+import React, { useEffect, useState } from "react";
 import { shuffle } from "../Utils/shuffle";
 import styles from "./styles.module.css";
 
@@ -26,8 +26,8 @@ export const Game = (props: GameProps) => {
   const [isGameComplete, setIsGameComplete] = useState<boolean>(false);
 
   useEffect(() => {
-    // restartGame();
     reshuffleGame();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const reshuffleGame = () => {
@@ -42,7 +42,6 @@ export const Game = (props: GameProps) => {
   const restartGame = () => {
     const countryData = Object.entries(data);
     const newShuffledData = shuffle(countryData).flat().slice(0, 40);
-    // const newShuffledData = shuffle(countryData).slice(0, 50);
     setInitialGameData(newShuffledData);
     setGameData(shuffle([...newShuffledData]));
     setClickedTiles([]);
