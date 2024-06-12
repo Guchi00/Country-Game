@@ -72,6 +72,7 @@ h3 {
   }
   .tiles {
     font-size: 20px;
+    color: black !important;
   }
 
   .action_container {
@@ -112,6 +113,7 @@ h3 {
   }
   .tiles {
     font-size: 20px;
+    color: black !important;
   }
 
   .action_container {
@@ -151,6 +153,7 @@ h3 {
   }
   .tiles {
     font-size: 16px;
+    color: black !important;
   }
 
   .action_container {
@@ -185,6 +188,7 @@ h3 {
   }
   .tiles {
     font-size: 10px;
+    color: black !important;
   }
 
   .action_container {
@@ -214,6 +218,7 @@ h3 {
   }
   .tiles {
     font-size: 10px;
+    color: black !important;
   }
 
   .action_container {
